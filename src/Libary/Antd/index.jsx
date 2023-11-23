@@ -42,7 +42,9 @@ const Index = () => {
   return (
     <div
       style={{
-        width: 256,
+        width: "100vh",
+        height: "100vh",
+        backgroundColor: '#001529',
       }}
     >
       <Button

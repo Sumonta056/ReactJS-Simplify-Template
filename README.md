@@ -78,3 +78,15 @@ export default {
 @tailwind components;
 @tailwind utilities;
 ```
+
+
+##### Hosting on Vercel
+
+
+```
+npm run build
+
+npm install --legacy-peer-deps
+```
+
+![Alt text](image.png)
