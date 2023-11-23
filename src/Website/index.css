@@ -1,0 +1,9 @@
+.bodys {
+  background-image: url("./assets/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  transition: 0.5s;
+
+
+}
