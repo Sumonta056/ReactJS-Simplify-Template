@@ -4,6 +4,7 @@ import Triple from "../assets/random.png";
 import Triple1 from "../assets/NavBar.png";
 import Triple2 from "../assets/search.png";
 import Triple3 from "../assets/cart.png";
+import Triple7 from "../assets/dark2.png";
 
 import { useNavigate } from "react-router-dom";
 
@@ -30,12 +31,70 @@ const Cards = () => {
   function handleButton6() {
     navigate("/shopping");
   }
+  function handleButton7() {
+    navigate("/darkmode");
+  }
   return (
     <div className="w-full py-[7rem] px-4 bg-[#e2e8f0]">
       <div
         className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-10"
         style={{ rowGap: "90px" }}
       >
+        <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
+          <img className="w-20 mx-auto mt-[-3rem]" src={Triple7} alt="/" />
+          <h2 className="text-2xl font-bold text-center py-8">
+            Dark-Light Mode
+          </h2>
+          <div className="text-center font-medium">
+            <p className="py-2 border-b mx-8 mt-2">Adaptive Dark Theme</p>
+            <p className="py-2 border-b mx-8">Toggle Button : Complete Theme</p>
+          </div>
+          <button
+            className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
+            onClick={handleButton7}
+          >
+            Live Demo
+          </button>
+        </div>
+        <div className="w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300">
+          <img
+            className="w-20 mx-auto mt-[-3rem] bg-transparent"
+            src={Triple2}
+            alt="/"
+          />
+          <h2 className="text-2xl font-bold text-center py-8">
+            Search Filter System
+          </h2>
+
+          <div className="text-center font-medium">
+            <p className="py-2 border-b mx-8 mt-2">Real-Time Searching</p>
+            <p className="py-2 border-b mx-8">Validation of Searching Item</p>
+          </div>
+          <button
+            className="bg-[#00df9a] text-[#000000] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
+            onClick={handleButton5}
+          >
+            Live Demo
+          </button>
+        </div>
+
+        <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
+          <img className="w-20 mx-auto mt-[-3rem]" src={Triple3} alt="/" />
+          <h2 className="text-2xl font-bold text-center py-8">
+            Shopping Cart System
+          </h2>
+          <div className="text-center font-medium">
+            <p className="py-2 border-b mx-8 mt-2">Book Library Website</p>
+            <p className="py-2 border-b mx-8">Tracking Cart Management</p>
+          </div>
+          <button
+            className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
+            onClick={handleButton6}
+          >
+            Live Demo
+          </button>
+        </div>
+
         <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
           <img className="w-20 mx-auto mt-[-3rem]" src={Single} alt="/" />
           <h2 className="text-2xl font-bold text-center py-8">
@@ -87,6 +146,7 @@ const Cards = () => {
             Live Demo
           </button>
         </div>
+
         <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
           <img className="w-20 mx-auto mt-[-3rem]" src={Triple1} alt="/" />
           <h2 className="text-2xl font-bold text-center py-8">Menu Bar</h2>
@@ -97,48 +157,6 @@ const Cards = () => {
           <button
             className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
             onClick={handleButton4}
-          >
-            Live Demo
-          </button>
-        </div>
-        <div className="w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300">
-          <img
-            className="w-20 mx-auto mt-[-3rem] bg-transparent"
-            src={Triple2}
-            alt="/"
-          />
-          <h2 className="text-2xl font-bold text-center py-8">
-            Search Filter System
-          </h2>
-
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">Real-Time Searching</p>
-            <p className="py-2 border-b mx-8">Validation of Searching Item</p>
-          </div>
-          <button
-            className="bg-[#00df9a] text-[#000000] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleButton5}
-          >
-            Live Demo
-          </button>
-        </div>
-
-        <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-          <img
-            className="w-20 mx-auto mt-[-3rem]"
-            src={Triple3}
-            alt="/"
-          />
-          <h2 className="text-2xl font-bold text-center py-8">
-            Shopping Cart System
-          </h2>
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">Book Library Website</p>
-            <p className="py-2 border-b mx-8">Tracking Cart Management</p>
-          </div>
-          <button
-            className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleButton6}
           >
             Live Demo
           </button>

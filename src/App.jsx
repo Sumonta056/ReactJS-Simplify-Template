@@ -6,6 +6,7 @@ import CustomMenu from "./component/Menu/App"
 import Website from "./Website/App"
 import SearchFilter from "./component/Search-Filter/App"
 import ShoppingCart from "./component/ShoppingCart/App"
+import DarkMode from  "./component/Dark-Light-Mode/App"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Custom" element={<CustomMenu />} />
         <Route path="/searchfilter" element={<SearchFilter />} />
         <Route path="/shopping" element={<ShoppingCart />} />
+        <Route path="/darkmode" element={<DarkMode />} />
       </Routes>
     </BrowserRouter>
   );
