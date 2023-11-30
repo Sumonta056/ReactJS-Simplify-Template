@@ -5,8 +5,7 @@ import Menu from  "./Libary/Antd/index"
 import CustomMenu from "./component/Menu/App"
 import Website from "./Website/App"
 import SearchFilter from "./component/Search-Filter/App"
-
-
+import ShoppingCart from "./component/ShoppingCart/App"
 
 function App() {
 
@@ -19,7 +18,7 @@ function App() {
         <Route path="/Menu" element={<Menu />} />
         <Route path="/Custom" element={<CustomMenu />} />
         <Route path="/searchfilter" element={<SearchFilter />} />
-    
+        <Route path="/shopping" element={<ShoppingCart />} />
       </Routes>
     </BrowserRouter>
   );

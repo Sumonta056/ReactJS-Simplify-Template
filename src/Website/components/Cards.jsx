@@ -3,6 +3,7 @@ import Double from "../assets/Menu.png";
 import Triple from "../assets/random.png";
 import Triple1 from "../assets/NavBar.png";
 import Triple2 from "../assets/search.png";
+import Triple3 from "../assets/cart.png";
 
 import { useNavigate } from "react-router-dom";
 
@@ -25,6 +26,9 @@ const Cards = () => {
 
   function handleButton5() {
     navigate("/searchfilter");
+  }
+  function handleButton6() {
+    navigate("/shopping");
   }
   return (
     <div className="w-full py-[7rem] px-4 bg-[#e2e8f0]">
@@ -118,25 +122,27 @@ const Cards = () => {
             Live Demo
           </button>
         </div>
-        
-        {/* <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
+
+        <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
           <img
-            className="w-20 mx-auto mt-[-3rem] bg-white"
-            src={Triple}
+            className="w-20 mx-auto mt-[-3rem]"
+            src={Triple3}
             alt="/"
           />
-          <h2 className="text-2xl font-bold text-center py-8">Accordion</h2>
+          <h2 className="text-2xl font-bold text-center py-8">
+            Shopping Cart System
+          </h2>
           <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">Keep-React Libary</p>
-            <p className="py-2 border-b mx-8">Button Style</p>
+            <p className="py-2 border-b mx-8 mt-2">Book Library Website</p>
+            <p className="py-2 border-b mx-8">Tracking Cart Management</p>
           </div>
           <button
             className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleButton3}
+            onClick={handleButton6}
           >
             Live Demo
           </button>
-        </div> */}
+        </div>
       </div>
     </div>
   );
