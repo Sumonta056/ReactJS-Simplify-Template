@@ -5,6 +5,7 @@ import Triple1 from "../assets/NavBar.png";
 import Triple2 from "../assets/search.png";
 import Triple3 from "../assets/cart.png";
 import Triple7 from "../assets/dark2.png";
+import NotificationIcon from "../assets/notification.png";
 
 import { useNavigate } from "react-router-dom";
 
@@ -33,6 +34,10 @@ const Cards = () => {
   }
   function handleButton7() {
     navigate("/darkmode");
+  }
+
+  function handleButtonToast() {
+    navigate("/toastify");
   }
   return (
     <div className="w-full py-[7rem] px-4 bg-[#e2e8f0]">
@@ -157,6 +162,28 @@ const Cards = () => {
           <button
             className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
             onClick={handleButton4}
+          >
+            Live Demo
+          </button>
+        </div>
+
+        <div className="w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300">
+          <img
+            className="w-20 mx-auto mt-[-3rem] bg-transparent"
+            src={NotificationIcon}
+            alt="/"
+          />
+          <h2 className="text-2xl font-bold text-center py-8">
+           React Toastify
+          </h2>
+
+          <div className="text-center font-medium">
+            <p className="py-2 border-b mx-8 mt-2">React notification made easy !</p>
+            <p className="py-2 border-b mx-8">Tons of Feature</p>
+          </div>
+          <button
+            className="bg-[#00df9a] text-[#000000] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
+            onClick={handleButtonToast}
           >
             Live Demo
           </button>
