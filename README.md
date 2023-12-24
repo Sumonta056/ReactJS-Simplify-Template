@@ -3,14 +3,17 @@
 # 🙄 React Simplify Templates  🙄
 ###  ✌️ Your go-to for streamlining React setups with library integration and Tailwind CSS. ✌️
 
+### [**(✍️ Read My Documentation of Learning ReactJS & TailwindCSS )**](https://sumontas-organization.gitbook.io/react-js-learning/)
+
+### [**( 👉 Visit Offical Website : ReactifyHub ) 👈**](https://react-js-simplify-template.vercel.app/)  
+
+<hr>
+
+![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFd)
 ![](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![]()
 
-
-##[**( 👉 Visit Website )**](https://react-js-simplify-template.vercel.app/)
-
-###[**(✍️ Read My Documentation of Learning ReactJS & TailwindCSS )**](https://sumontas-organization.gitbook.io/react-js-learning/)
+<hr>
 
 ![https://react-js-simplify-template.vercel.app/](image-1.png)
 
