@@ -24,6 +24,9 @@
 
 
 # React + Vite Setup
+
+</div>
+
 ```
     npm create vite@latest
 ```
@@ -74,9 +77,11 @@
     npm run dev
 ```
 
-
+<div align = "center">
 
 ## Tailwind CSS Setup ( [Resource Link](https://tailwindcss.com/docs/guides/vite#react) )
+
+</div>
   
 
 ```
