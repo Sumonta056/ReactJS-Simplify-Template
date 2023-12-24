@@ -14,12 +14,12 @@ const Hero = () => {
           {/* <p className="md:text-2xl text-xl font-bold text-gray-500">
         Welcome to React Simplify Hub, your go-to resource for simplifying React development
         </p> */}
-          <div className="flex justify-center items-center">
-            <p className="md:text-3xl sm:text-3xl text-xl font-bold py-2 text-[#c4c5c4]">
+          <div className="flex flex-row justify-center">
+            <p className="md:text-3xl sm:text-3xl text-xl font-bold  text-[#c4c5c4]">
               Package and Libary Documentation :
             </p>
             <Typed
-              className="md:text-3xl sm:text-3xl text-xl font-bold md:pl-4 pl-2 text-[#00df9a]"
+              className="md:text-3xl sm:text-3xl text-xl font-bold md:pl-4  pl-2 text-[#00df9a]"
               strings={[
                 "@ant-design/icons",
                 "@mui/icons-material",

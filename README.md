@@ -1,3 +1,24 @@
+<div align = "center">
+
+# 🙄 React Simplify Templates  🙄
+###  ✌️ Your go-to for streamlining React setups with library integration and Tailwind CSS. ✌️
+
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFd)
+![](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![]()
+
+
+##[**( 👉 Visit Website )**](https://react-js-simplify-template.vercel.app/)
+
+###[**(✍️ Read My Documentation of Learning ReactJS & TailwindCSS )**](https://sumontas-organization.gitbook.io/react-js-learning/)
+
+![https://react-js-simplify-template.vercel.app/](image-1.png)
+
+![Alt text](image-2.png)
+
+
+<hr>
+
 
 # React + Vite Setup
 ```
@@ -5,7 +26,8 @@
 ```
 ```
     "dependencies": {
-    "@ant-design/icons": "^4.8.0",
+       "@ant-design/icons": "^4.8.0",
+    "@material-ui/core": "^4.12.4",
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.17",
     "@mui/styled-engine-sc": "^6.0.0-alpha.5",
@@ -19,15 +41,27 @@
     "jspdf": "^2.5.1",
     "keep-react": "^1.0.1",
     "moment": "^2.29.4",
-    "react": "^18.2.0",
+    "phosphor-react": "^1.4.1",
+    "react": "^18.0.0",
     "react-circular-progressbar": "^2.1.0",
     "react-datepicker": "^4.18.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.2",
+    "react-icons": "^4.3.1",
+    "react-particles": "^2.12.2",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "react-switch": "^7.0.0",
     "react-to-pdf": "^1.0.1",
     "react-to-print": "^2.14.15",
-    "styled-components": "^6.1.1"
+    "react-toastify": "^9.1.3",
+    "react-typed": "^1.2.0",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5",
+    "styled-components": "^6.1.1",
+    "swiper": "^8.4.5",
+    "tsparticles-slim": "^2.12.0"
   },
 ```
 ```
