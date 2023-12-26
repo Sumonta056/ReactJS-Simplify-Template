@@ -10,6 +10,7 @@ import DarkMode from  "./component/Dark-Light-Mode/App"
 import Toastify from './component/React-Toastify/App'
 import ReactForm from './component/Reack-hook-form/App'
 import TaliwindCSS from "./component/TaliwindCSS_Learning/App"
+import Grid from "./Libary/SemanticUI-Power/App"
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/toastify" element={<Toastify />} /> 
         <Route path="/reactformhook" element={<ReactForm />} /> 
         <Route path="/taliwindcss" element={<TaliwindCSS />} /> 
+        <Route path="/grid" element={<Grid />} /> 
       </Routes>
     </BrowserRouter>
   );

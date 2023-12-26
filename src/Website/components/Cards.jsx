@@ -7,9 +7,11 @@ import Triple3 from "../assets/cart.png";
 import Triple7 from "../assets/dark2.png";
 import NotificationIcon from "../assets/notification.png";
 import Form from "../assets/form.png";
-import tailwindcss from "../assets/taliwind.png"
+import tailwindcss from "../assets/taliwind.png";
 
 import { useNavigate } from "react-router-dom";
+import CustomComponent from "./CustomComponent";
+import CustomComponent2 from "./CustomComponent2";
 
 const Cards = () => {
   const navigate = useNavigate();
@@ -49,191 +51,118 @@ const Cards = () => {
   function handleTailwindCSS() {
     navigate("/taliwindcss");
   }
+
+  function handleSemantic() {
+    navigate("/grid");
+  }
   return (
     <div className="w-full py-[7rem] px-4 bg-[#e2e8f0]">
       <div
         className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-10"
         style={{ rowGap: "90px" }}
       >
-        <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-          <img className="w-20 mx-auto mt-[-3rem]" src={Triple7} alt="/" />
-          <h2 className="text-2xl font-bold text-center py-8">
-            Dark-Light Mode
-          </h2>
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">Adaptive Dark Theme</p>
-            <p className="py-2 border-b mx-8">Toggle Button : Complete Theme</p>
-          </div>
-          <button
-            className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleButton7}
-          >
-            Live Demo
-          </button>
-        </div>
-        <div className="w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300">
-          <img
-            className="w-20 mx-auto mt-[-3rem] bg-transparent"
-            src={Triple2}
-            alt="/"
-          />
-          <h2 className="text-2xl font-bold text-center py-8">
-            Search Filter System
-          </h2>
+        {/* row11 */}
 
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">Real-Time Searching</p>
-            <p className="py-2 border-b mx-8">Validation of Searching Item</p>
-          </div>
-          <button
-            className="bg-[#00df9a] text-[#000000] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleButton5}
-          >
-            Live Demo
-          </button>
-        </div>
+        <CustomComponent2
+          image={Triple7}
+          h2name="Dark-Light Mode"
+          p1name="Adaptive Dark Theme"
+          p2name="Toggle Button : Complete Theme"
+          handleButtonClick={handleButton7}
+        />
 
-        <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-          <img className="w-20 mx-auto mt-[-3rem]" src={Triple3} alt="/" />
-          <h2 className="text-2xl font-bold text-center py-8">
-            Shopping Cart System
-          </h2>
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">Book Library Website</p>
-            <p className="py-2 border-b mx-8">Tracking Cart Management</p>
-          </div>
-          <button
-            className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleButton6}
-          >
-            Live Demo
-          </button>
-        </div>
+        <CustomComponent
+          image={Triple2}
+          h2name="Search Filter System"
+          p1name="Real-Time Searching"
+          p2name="Validation of Searching Item"
+          handleButtonClick={handleButton5}
+        />
 
-        <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-          <img className="w-20 mx-auto mt-[-3rem]" src={Form} alt="/" />
-          <h2 className="text-2xl font-bold text-center py-8">
-            Form UI & Dynamics
-          </h2>
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">Built in UI Library</p>
-            <p className="py-2 border-b mx-8">Template Login Form</p>
-          </div>
-          <button
-            className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleFormUI}
-          >
-            Live Demo
-          </button>
-        </div>
+        <CustomComponent2
+          image={Triple3}
+          h2name="Shopping Cart System"
+          p1name="Book Library Website"
+          p2name="Tracking Cart Management"
+          handleButtonClick={handleButton6}
+        />
 
-        <div className="w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300">
-          <img
-            className="w-20 mx-auto mt-[-3rem] bg-transparent"
-            src={NotificationIcon}
-            alt="/"
-          />
-          <h2 className="text-2xl font-bold text-center py-8">
-            React Toastify
-          </h2>
+        {/* row2 */}
 
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">
-              React notification made easy !
-            </p>
-            <p className="py-2 border-b mx-8">Tons of Feature</p>
-          </div>
-          <button
-            className="bg-[#00df9a] text-[#000000] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleButtonToast}
-          >
-            Live Demo
-          </button>
-        </div>
-        <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-          <img className="w-20 mx-auto mt-[-3rem]" src={Single} alt="/" />
-          <h2 className="text-2xl font-bold text-center py-8">
-            Password Generator Website
-          </h2>
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">Both Number & Character</p>
-            <p className="py-2 border-b mx-8">Length Up to 50</p>
-          </div>
-          <button
-            className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleButton1}
-          >
-            Live Demo
-          </button>
-        </div>
+        <CustomComponent2
+          image={Form}
+          h2name="Form UI & Dynamicse"
+          p1name="Built in UI Library"
+          p2name="Template Login Form"
+          handleButtonClick={handleFormUI}
+        />
 
-        <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-          <img className="w-20 mx-auto mt-[-3rem]" src={tailwindcss} alt="/" />
-          <h2 className="text-2xl font-bold text-center py-8">Tailwind CSS</h2>
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">
-              Trying out different things
-            </p>
-            <p className="py-2 border-b mx-8">
-              Check the code for better understanding
-            </p>
-          </div>
-          <button
-            className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleTailwindCSS}
-          >
-            Live Demo
-          </button>
-        </div>
-        <div className="w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300">
-          <img
-            className="w-20 mx-auto mt-[-3rem] bg-transparent"
-            src={Double}
-            alt="/"
-          />
-          <h2 className="text-2xl font-bold text-center py-8">
-            Custom Menu Navbar
-          </h2>
+        <CustomComponent
+          image={NotificationIcon}
+          h2name="React Toastify"
+          p1name="React notification made easy !"
+          p2name="Tons of Feature"
+          handleButtonClick={handleButtonToast}
+        />
 
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">Light & Simple</p>
-            <p className="py-2 border-b mx-8">Responsive Design</p>
-          </div>
-          <button
-            className="bg-[#00df9a] text-[#000000] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleButton2}
-          >
-            Live Demo
-          </button>
-        </div>
-        <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-          <img className="w-20 mx-auto mt-[-3rem]" src={Triple} alt="/" />
-          <h2 className="text-2xl font-bold text-center py-8">Accordion</h2>
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">Keep-React Libary</p>
-            <p className="py-2 border-b mx-8">Button Style</p>
-          </div>
-          <button
-            className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleButton3}
-          >
-            Live Demo
-          </button>
-        </div>
-        <div className="w-full shadow-xl  bg-[#86efac] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-          <img className="w-20 mx-auto mt-[-3rem]" src={Triple1} alt="/" />
-          <h2 className="text-2xl font-bold text-center py-8">Menu Bar</h2>
-          <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-2">Antd Library</p>
-            <p className="py-2 border-b mx-8">Responsive Design</p>
-          </div>
-          <button
-            className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3"
-            onClick={handleButton4}
-          >
-            Live Demo
-          </button>
-        </div>
+        <CustomComponent2
+          image={Single}
+          h2name="Password Generator Website"
+          p1name="Both Number & Character"
+          p2name="Length Up to 50"
+          handleButtonClick={handleButton1}
+        />
+
+        {/* row3 */}
+
+        <CustomComponent2
+          image={tailwindcss}
+          h2name="Tailwind CSS"
+          p1name="Trying out different things"
+          p2name="Check the code for better understanding"
+          handleButtonClick={handleTailwindCSS}
+        />
+
+        <CustomComponent
+          image={Triple1}
+          h2name="Semantic UI"
+          p1name="Built UI Components"
+          p2name="Grid View, Table Component, Segments"
+          handleButtonClick={handleSemantic}
+        />
+
+        <CustomComponent2
+          image={Triple}
+          h2name="Keep-React Libary"
+          p1name="Accordion Options"
+          p2name="Button Style and More Components"
+          handleButtonClick={handleButton3}
+        />
+
+        {/* row4*/}
+
+        <CustomComponent2
+          image={Triple1}
+          h2name="Antd Library"
+          p1name="Menu Bar"
+          p2name="Responsive Design"
+          handleButtonClick={handleButton4}
+        />
+        <CustomComponent
+          image={Double}
+          h2name="Custom Menu Navbar"
+          p1name="Light & Simple"
+          p2name="Responsive Design"
+          handleButtonClick={handleButton2}
+        />
+
+        {/* <CustomComponent2
+          image={Triple1}
+          h2name="Menu Bar"
+          p1name="Antd Library"
+          p2name="Responsive Design"
+          handleButtonClick={handleButton4}
+        /> */}
       </div>
     </div>
   );
