@@ -1,4 +1,5 @@
 <div align = "center">
+<img src="./assets/React banner.png">
 
 # 🙄 React Simplify Templates  🙄
 ###  ✌️ Your go-to for streamlining React setups with library integration and Tailwind CSS. ✌️
@@ -13,11 +14,13 @@
 ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFd)
 ![](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
+
+
 <hr>
 
-![https://react-js-simplify-template.vercel.app/](image-1.png)
+![https://react-js-simplify-template.vercel.app/](./assets/image-1.png)
 
-![Alt text](image-2.png)
+![Alt text](./assets/image-2.png)
 
 
 <hr>
@@ -131,4 +134,4 @@ npm run build
 npm install --legacy-peer-deps
 ```
 
-![Alt text](image.png)
+![Alt text](./assets/image.png)
