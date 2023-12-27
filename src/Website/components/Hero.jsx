@@ -1,4 +1,6 @@
 import Typed from "react-typed";
+// import DP from "../assets/dp.png";
+
 const Hero = () => {
   function handleButton1() {
     window.location.href =
@@ -7,6 +9,10 @@ const Hero = () => {
   return (
     <div className="bodys">
       <div className="text-white">
+        {/* <div className="setingImage">
+        <img src={DP} className="imaggeSet"/>
+        </div> */}
+       
         <div className="max-w-[900px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
           <h1 className="md:text-9xl mt-[30px] sm:text-6xl text-4xl font-bold md:py-6 text-[#00df9a]">
             React Simplify Hub

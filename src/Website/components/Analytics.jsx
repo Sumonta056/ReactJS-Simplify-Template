@@ -1,4 +1,4 @@
-import Laptop from "../assets/laptop1.jpg";
+import Laptop from "../assets/dp1.jpg";
 
 
 const Analytics = () => {
@@ -13,7 +13,7 @@ const Analytics = () => {
         <img className="w-[500px] mx-auto my-4" src={Laptop} alt="/" />
         <div className="flex flex-col justify-center">
           <p className="text-[#020202] font-bold ">Meet the Developer:</p>
-          <h1 className="md:text-4xl text-[#349778] sm:text-3xl text-2xl font-bold py-2">
+          <h1 className="md:text-6xl text-[#349778] sm:text-3xl text-2xl font-bold py-2">
             Sumonta Saha Mridul
           </h1>
           <p className="text-justify">
