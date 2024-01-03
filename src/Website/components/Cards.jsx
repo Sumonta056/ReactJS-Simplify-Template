@@ -8,6 +8,7 @@ import Triple7 from "../assets/dark2.png";
 import NotificationIcon from "../assets/notification.png";
 import Form from "../assets/form.png";
 import tailwindcss from "../assets/taliwind.png";
+import Rating from "../assets/rating.png";
 
 import { useNavigate } from "react-router-dom";
 import CustomComponent from "./CustomComponent";
@@ -55,6 +56,10 @@ const Cards = () => {
   function handleSemantic() {
     navigate("/grid");
   }
+  function handleRating() {
+    navigate("/rating");
+  }
+
   return (
     <div className="w-full py-[7rem] px-4 bg-[#e2e8f0]">
       <div
@@ -148,7 +153,15 @@ const Cards = () => {
           p2name="Responsive Design"
           handleButtonClick={handleButton4}
         />
+
         <CustomComponent
+          image={Rating}
+          h2name="Rating System"
+          p1name="Dynamic Star Rating with Hover"
+          p2name="Countdown Rating Growth"
+          handleButtonClick={handleRating}
+        />
+        <CustomComponent2
           image={Double}
           h2name="Custom Menu Navbar"
           p1name="Light & Simple"
@@ -156,12 +169,30 @@ const Cards = () => {
           handleButtonClick={handleButton2}
         />
 
+        {/* row5*/}
+
         {/* <CustomComponent2
           image={Triple1}
-          h2name="Menu Bar"
-          p1name="Antd Library"
+          h2name="Antd Library"
+          p1name="Menu Bar"
           p2name="Responsive Design"
           handleButtonClick={handleButton4}
+        /> */}
+
+        {/* <CustomComponent
+          image={Rating}
+          h2name="Rating System"
+          p1name="Dynamic Star Rating with Hover"
+          p2name="Countdown Rating Growth"
+          handleButtonClick={handleRating}
+        /> */}
+
+        {/* <CustomComponent2
+          image={Double}
+          h2name="Custom Menu Navbar"
+          p1name="Light & Simple"
+          p2name="Responsive Design"
+          handleButtonClick={handleButton2}
         /> */}
       </div>
     </div>

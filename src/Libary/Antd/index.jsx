@@ -42,7 +42,7 @@ const Index = () => {
   return (
     <div
       style={{
-        width: "100vh",
+        width: "100%",
         height: "100vh",
         backgroundColor: '#001529',
       }}

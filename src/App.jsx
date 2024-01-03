@@ -11,7 +11,7 @@ import Toastify from './component/React-Toastify/App'
 import ReactForm from './component/Reack-hook-form/App'
 import TaliwindCSS from "./component/TaliwindCSS_Learning/App"
 import Grid from "./Libary/SemanticUI-Power/App"
-
+import Rating from "./component/Rating/App"
 
 function App() {
 
@@ -30,6 +30,7 @@ function App() {
         <Route path="/reactformhook" element={<ReactForm />} /> 
         <Route path="/taliwindcss" element={<TaliwindCSS />} /> 
         <Route path="/grid" element={<Grid />} /> 
+        <Route path="/rating" element={<Rating />} /> 
       </Routes>
     </BrowserRouter>
   );
