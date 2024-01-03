@@ -3,60 +3,70 @@ import {
   FaFacebookSquare,
   FaGithubSquare,
   FaInstagram,
-  FaTwitterSquare,
-} from 'react-icons/fa';
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Footer = () => {
+  function youtubeAction() {
+    window.location.href = "https://www.youtube.com/@sumontasaha5638";
+  }
+  function FacebookAction() {
+    window.location.href = "https://www.facebook.com/sumonta.mridul/";
+  }
+  function instagramAction() {
+    window.location.href = "https://www.instagram.com/_sumonta_saha_/";
+  }
+  function linkedinAction() {
+    window.location.href = "https://www.linkedin.com/in/sumonta-saha-mridul-b35bb61a0/";
+  }
+  function githubAction() {
+    window.location.href = "https://github.com/Sumonta056";
+  }
+  function WebsiteAction() {
+    window.location.href = "https://mri-shot.vercel.app/";
+  }
   return (
-    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
-      <div>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
-        <p className='py-4'>React Simplify Template: Your go-to for streamlining React setups with library integration and Tailwind CSS.</p>
-        <div className='flex justify-between md:w-[75%] my-6'>
-            <FaFacebookSquare size={30} />
-            <FaInstagram size={30} />
-            <FaTwitterSquare size={30} />
-            <FaGithubSquare size={30} />
-            <FaDribbbleSquare size={30} />
-        </div>
+    <div className="max-w-[1240px] mx-auto py-16 px-4 flex flex-col gap-2 text-gray-300">
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="text-3xl font-bold text-[#00df9a]">REACT.</h1>
+        <p className="pb-4">
+          React Simplify Template: Your go-to for streamlining React setups with
+          library integration and Tailwind CSS.
+        </p>
       </div>
-      <div className='lg:col-span-2 flex justify-between mt-6'>
-    <div>
-        <h6 className='font-medium text-gray-400'>Solutions</h6>
-        <ul>
-            <li className='py-2 text-sm'>Analytics</li>
-            <li className='py-2 text-sm'>Marketing</li>
-            <li className='py-2 text-sm'>Commerce</li>
-            <li className='py-2 text-sm'>Insights</li>
-        </ul>
-    </div>
-    <div>
-        <h6 className='font-medium text-gray-400'>Support</h6>
-        <ul>
-            <li className='py-2 text-sm'>Pricing</li>
-            <li className='py-2 text-sm'>Documentation</li>
-            <li className='py-2 text-sm'>Guides</li>
-            <li className='py-2 text-sm'>API Status</li>
-        </ul>
-    </div>
-    <div>
-        <h6 className='font-medium text-gray-400'>Company</h6>
-        <ul>
-            <li className='py-2 text-sm'>About</li>
-            <li className='py-2 text-sm'>Blog</li>
-            <li className='py-2 text-sm'>Jobs</li>
-            <li className='py-2 text-sm'>Press</li>
-            <li className='py-2 text-sm'>Careers</li>
-        </ul>
-    </div>
-    <div>
-        <h6 className='font-medium text-gray-400'>Legal</h6>
-        <ul>
-            <li className='py-2 text-sm'>Claim</li>
-            <li className='py-2 text-sm'>Policy</li>
-            <li className='py-2 text-sm'>Terms</li>
-        </ul>
-    </div>
+
+      <div className="flex justify-center gap-16">
+        <FaFacebookSquare
+          size={30}
+          className="hover:text-sky-700"
+          onClick={FacebookAction}
+        />
+        <FaInstagram
+          size={30}
+          className="hover:text-red-700"
+          onClick={instagramAction}
+        />
+        <FaLinkedin
+          size={30}
+          className="hover:text-cyan-700"
+          onClick={linkedinAction}
+        />
+        <FaGithubSquare
+          size={30}
+          className="hover:text-zinc-700"
+          onClick={githubAction}
+        />
+        <FaDribbbleSquare
+          size={30}
+          className="hover:text-lime-700"
+          onClick={WebsiteAction}
+        />
+        <FaYoutube
+          size={30}
+          className="hover:text-red-700"
+          onClick={youtubeAction}
+        />
       </div>
     </div>
   );
