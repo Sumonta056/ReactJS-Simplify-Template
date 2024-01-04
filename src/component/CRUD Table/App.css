@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;600&display=swap");
+
+.Crud_Body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playpen Sans", cursive;
+    background-color: hsl(0, 4%, 18%);
+    color: #fff;
+}
+
+.CRUD_APP {
+    text-align: center;
+}
+
+.CRUD_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+
+.add-CRUD_Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-CRUD_Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    color: #73addf;
+}
+
+.add_crud {
+    background-color: #73addf;
+    color: #fff;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    appearance: none;
+    outline: none;
+    border: 0;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Playpen Sans", cursive;
+    color: black;
+}
+
+.add_crud {
+    appearance: none;
+    outline: none;
+    border: 0;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Playpen Sans", cursive;
+}
+
+.add_crud {
+    font-weight: 600;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 6px;
+}
+
+.edit {
+    background-color: #0562db;
+    padding: 5px 10px;
+    color: #fff;
+
+}
+
+.delete {
+    background-color: rgb(245, 25, 25);
+    padding: 5px;
+    padding: 5px 10px;
+    color: #fff;
+
+}
+
+.search-table-CRUD_Container {
+    min-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    width: 300px;
+}
+
+.table-crud-table {
+    font-family: "Playpen Sans", cursive;
+    border-collapse: collapse;
+}
+
+.table-crud-table td,
+.table-crud-table .table-crud-th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    max-width: 350px;
+    word-wrap: break-word;
+    text-align: left;
+    color: #fff;
+}
+
+.table-crud-table td {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.table-crud-table .table-crud-tr:hover {
+    background-color: #3a3737;
+}
+
+.table-crud-tr .table-crud-th {
+    min-width: 200px;
+}
+
+.table-crud-table .table-crud-th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: rgb(7, 7, 7);
+    font-weight: 600;
+}
+
+.crud-pagination {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    gap: 5px;
+    color: rgb(3, 3, 3);
+    background-color: #73addf;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .table-crud-tr .table-crud-th {
+        min-width: unset;
+    }
+
+    .table-crud-table td {
+        font-size: 14px;
+    }
+
+    .actions {
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
+    button {
+        margin: 3px 0;
+    }
+}

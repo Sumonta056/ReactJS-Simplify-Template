@@ -9,7 +9,7 @@ import NotificationIcon from "../assets/notification.png";
 import Form from "../assets/form.png";
 import tailwindcss from "../assets/taliwind.png";
 import Rating from "../assets/rating.png";
-
+import CRUD from "../assets/crud.png";
 import { useNavigate } from "react-router-dom";
 import CustomComponent from "./CustomComponent";
 import CustomComponent2 from "./CustomComponent2";
@@ -58,6 +58,9 @@ const Cards = () => {
   }
   function handleRating() {
     navigate("/rating");
+  }
+  function crudButtonClick() {
+    navigate("/crud");
   }
 
   return (
@@ -171,13 +174,13 @@ const Cards = () => {
 
         {/* row5*/}
 
-        {/* <CustomComponent2
-          image={Triple1}
-          h2name="Antd Library"
-          p1name="Menu Bar"
-          p2name="Responsive Design"
-          handleButtonClick={handleButton4}
-        /> */}
+        <CustomComponent2
+          image={CRUD}
+          h2name="Simple CRUD Table"
+          p1name="Create, Edit, Delete Data"
+          p2name="Search Values in Table "
+          handleButtonClick={crudButtonClick}
+        />
 
         {/* <CustomComponent
           image={Rating}

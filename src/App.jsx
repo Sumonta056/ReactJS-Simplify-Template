@@ -12,6 +12,7 @@ import ReactForm from './component/Reack-hook-form/App'
 import TaliwindCSS from "./component/TaliwindCSS_Learning/App"
 import Grid from "./Libary/SemanticUI-Power/App"
 import Rating from "./component/Rating/App"
+import CRUD from "./component/CRUD Table/App"
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/taliwindcss" element={<TaliwindCSS />} /> 
         <Route path="/grid" element={<Grid />} /> 
         <Route path="/rating" element={<Rating />} /> 
+        <Route path="/crud" element={<CRUD />} /> 
       </Routes>
     </BrowserRouter>
   );
