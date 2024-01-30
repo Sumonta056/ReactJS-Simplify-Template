@@ -1,8 +1,6 @@
 import Laptop from "../assets/dp1.jpg";
 
-
 const Analytics = () => {
-
   function handleButton1() {
     window.location.href = "https://sumonta056.github.io/";
   }
@@ -23,7 +21,10 @@ const Analytics = () => {
             love Photography📸 as a creative outlet and capturing the world
             around me.
           </p>
-          <button className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3" onClick={handleButton1}>
+          <button
+            className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3"
+            onClick={handleButton1}
+          >
             More
           </button>
         </div>
